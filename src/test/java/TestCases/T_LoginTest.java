@@ -12,11 +12,11 @@ public class T_LoginTest extends SuiteBase {
     LoginPage loginPage;
     @BeforeTest
     public void launch(){
-        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        driver.get(param.getProperty("siteURL"));
+        loginPage = new LoginPage(driver);
     }
     @Test(dataProvider = "testData")
     public void loginTest(String username, String password, String expectedMsg){
-        loginPage = new LoginPage(driver);
         String msg = loginPage.login(username,password);
         Assert.assertEquals(msg,expectedMsg);
     }

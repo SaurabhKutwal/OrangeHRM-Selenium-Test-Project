@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="OrangeHRM Test Suite">
-    <test verbose="2" preserve-order="true" name="OrangeHRM-Selenium-Test-Project">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/saurabh/Desktop/JavaSelenium/OrangeHRM-Selenium-Test-Project">
         <classes>
             <class name="TestCases.T_LoginTest">
                 <methods>
-                    <include name="test"/>
+                    <include name="loginTest"/>
                 </methods>
             </class>
         </classes>
