@@ -6,12 +6,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.Properties;
 
 public class SuiteBase {
@@ -33,6 +38,21 @@ public class SuiteBase {
     void initProperties() throws IOException {
         param = new Properties();
         param.load(Files.newInputStream(Paths.get(System.getProperty("user.dir") + "//src//test//resources//properties//test.properties")));
+    }
+
+    public String prepEvidence(String testClass,String caseId){
+        new File(System.getProperty("user.dir") + "//Outputs//Evidences//" + testClass).mkdir();
+        String time = new SimpleDateFormat("dd-MM-yy HH:mm:ss").format(new Date());
+        String path = System.getProperty("user.dir") + "//Outputs//Evidences//" + testClass + "//" + caseId + " " + time;
+        new File(path).mkdir();
+        return path;
+    }
+    public void lauchBrowser(){
+        driver.get(param.getProperty("siteURL"));
+    }
+
+    public void refresh(){
+        driver.navigate().refresh();
     }
 
     @AfterSuite

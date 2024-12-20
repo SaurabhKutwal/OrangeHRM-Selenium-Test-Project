@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="063a77a8-5e72-4444-a077-d3015cc6d7e3" name="Changes" comment="Login page test successful.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/CreateLoginCredentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Properties/test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 20-12-24 15:10:42/1.Login Credentials.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 20-12-24 15:10:42/2.Response.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 20-12-24 15:10:44/1.Login Credentials.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 20-12-24 15:10:44/2.Response.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 20-12-24 15:10:46/1.Login Credentials.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 20-12-24 15:10:46/2.Response.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 20-12-24 15:10:48/1.Login Credentials.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 20-12-24 15:10:48/2.Response.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UtilityObjects/PageUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/T_LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/T_LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UtilityObjects/SuiteBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UtilityObjects/SuiteBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +59,7 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.CreateLoginCredentials.getCredentials">
+  <component name="RunManager" selected="TestNG.T_LoginTest">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,9 +120,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.T_LoginTest" />
         <item itemvalue="TestNG.CreateLoginCredentials.getCredentials" />
         <item itemvalue="TestNG.T_LoginTest.loginTest" />
-        <item itemvalue="TestNG.T_LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734629029051</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Login page test successful.">
+      <option name="closed" value="true" />
+      <created>1734636575334</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734636575334</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
