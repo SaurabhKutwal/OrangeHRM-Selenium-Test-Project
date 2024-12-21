@@ -9,12 +9,15 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.Hashtable;
+
+import static UtilityObjects.ReadXLS.getData;
 
 public class T_LoginTest extends SuiteBase {
 
     LoginPage loginPage;
     @BeforeTest
-    public void launch(){
+    public void launch() throws IOException {
         lauchBrowser();
         loginPage = new LoginPage(driver);
     }
@@ -24,21 +27,16 @@ public class T_LoginTest extends SuiteBase {
         refresh();
     }
     @Test(dataProvider = "testData")
-    public void loginTest(String caseId,String username, String password, String expectedMsg) throws IOException {
-        String evidencePath = prepEvidence(this.getClass().getSimpleName(),caseId);
+    public void loginTest(int row,Hashtable<String,String> data) throws IOException {
+        String evidencePath = prepEvidence(this.getClass().getSimpleName(),data.get("Case_ID"));
         loginPage.setEvidencePath(evidencePath);
 
-        String msg = loginPage.login(caseId,username,password);
-        Assert.assertEquals(msg,expectedMsg);
+        String msg = loginPage.login(data.get("Case_ID"),data.get("Username"),data.get("Password"));
+        Assert.assertEquals(msg,data.get("Expected"));
     }
 
     @DataProvider
-    public Object[][] testData(){
-        return new Object[][]{
-                {"Case_001","temp","temp","Invalid credentials"},
-                {"Case_002","Admin","temp","Invalid credentials"},
-                {"Case_003","temp","admin123","Invalid credentials"},
-                {"Case_004","Admin","admin123","Login Successful"}
-        };
+    public Object[][] testData() throws IOException {
+        return getData(this);
     }
 }
