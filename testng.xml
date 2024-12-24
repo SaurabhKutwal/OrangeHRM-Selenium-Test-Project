@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" parallel="classes" thread-count="2">
     <test verbose="2" preserve-order="true" name="/Users/saurabh/Desktop/JavaSelenium/OrangeHRM-Selenium-Test-Project">
         <classes>
             <class name="TestCases.T_LoginTest">
                 <methods>
-                    <include name="loginTest"/>
+                    <include name="T_loginTest"/>
+                </methods>
+            </class>
+            <class name="TestCases.T_MyInfoPDUITest">
+                <methods>
+                    <include name="T_myInfoPDUITest"/>
                 </methods>
             </class>
         </classes>

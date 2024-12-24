@@ -53,13 +53,6 @@ public class LoginPage extends SuiteBase {
         return msg;
     }
 
-//    public void tempLogin(String user, String pass){
-//        userName.sendKeys(user);
-//        password.sendKeys(pass);
-//        loginBtn.click();
-//        String msg = getErrorMsg();
-//    }
-
     String getErrorMsg(){
         try{
             return errorMsg.getText();
@@ -72,6 +65,5 @@ public class LoginPage extends SuiteBase {
     public void setEvidencePath(String evidencePath){
         this.evidencePath = evidencePath;
     }
-
 
 }

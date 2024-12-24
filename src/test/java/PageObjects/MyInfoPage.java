@@ -1,9 +1,11 @@
 package PageObjects;
 
 import UtilityObjects.SuiteBase;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
@@ -62,7 +64,12 @@ public class MyInfoPage extends SuiteBase {
     @FindBy(xpath = "//label[text() = 'Female']/input")
     WebElement femaleChkBox;
 
+    @FindBy(xpath = "//div[@class = 'orangehrm-edit-employee-content']/child::div[1]/form")
+    WebElement form;
+
     public String checkField(String field) throws IOException {
+
+        wait.until(ExpectedConditions.visibilityOf(form));
 
         takeScreenshot(driver,evidencePath,field);
 

@@ -5,9 +5,7 @@ import PageObjects.LoginPage;
 import PageObjects.MyInfoPage;
 import UtilityObjects.SuiteBase;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.IOException;
 import java.util.Hashtable;
@@ -20,8 +18,9 @@ public class T_MyInfoPDUITest extends SuiteBase {
     LoginPage loginPage;
     DashboardPage dashboardPage;
 
-    @BeforeTest
+    @BeforeClass
     void lunch() throws IOException {
+        startUp();
         lauchBrowser();
         loginPage = new LoginPage(driver);
 
@@ -35,10 +34,15 @@ public class T_MyInfoPDUITest extends SuiteBase {
     }
 
     @Test(dataProvider = "testData")
-    void myInfoPDUITest(int row, Hashtable<String,String> data) throws IOException {
+    void T_myInfoPDUITest(int row, Hashtable<String,String> data) throws IOException {
         String evidencePath = getEvidencePath(this.getClass().getSimpleName(),data.get("Case_ID"));
         myInfoPage.setEvidencePath(evidencePath);
         Assert.assertEquals(myInfoPage.checkField(data.get("Field")),data.get("Status Expected"),"failed");
+    }
+
+    @AfterClass
+    public void end(){
+        tearDown();
     }
 
     @DataProvider

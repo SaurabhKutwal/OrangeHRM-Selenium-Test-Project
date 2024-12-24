@@ -20,7 +20,7 @@ public class SuiteBase {
     public WebDriver driver;
     public WebDriverWait wait;
     public Properties param;
-    @BeforeSuite
+
     public void startUp() throws IOException {
         initDriver();
         initProperties();
@@ -29,11 +29,13 @@ public class SuiteBase {
     void initDriver(){
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        System.out.println("Driver Initialization Successfully");
     }
 
     void initProperties() throws IOException {
         param = new Properties();
         param.load(Files.newInputStream(Paths.get(System.getProperty("user.dir") + "//src//test//resources//properties//test.properties")));
+        System.out.println("Properties file loaded");
     }
 
     public String getEvidencePath(String testClass,String caseId){
@@ -45,13 +47,14 @@ public class SuiteBase {
     }
     public void lauchBrowser(){
         driver.get(param.getProperty("siteURL"));
+        System.out.println("Browser Launched");
     }
 
     public void refresh(){
         driver.navigate().refresh();
     }
 
-    @AfterSuite
+
     public void tearDown(){
         driver.quit();
     }
