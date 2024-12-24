@@ -28,7 +28,7 @@ public class T_LoginTest extends SuiteBase {
     }
     @Test(dataProvider = "testData")
     public void loginTest(int row,Hashtable<String,String> data) throws IOException {
-        String evidencePath = prepEvidence(this.getClass().getSimpleName(),data.get("Case_ID"));
+        String evidencePath = getEvidencePath(this.getClass().getSimpleName(),data.get("Case_ID"));
         loginPage.setEvidencePath(evidencePath);
 
         String msg = loginPage.login(data.get("Case_ID"),data.get("Username"),data.get("Password"));
