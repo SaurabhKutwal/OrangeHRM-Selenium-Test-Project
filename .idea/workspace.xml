@@ -4,64 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063a77a8-5e72-4444-a077-d3015cc6d7e3" name="Changes" comment="Data-driven testing using external excel sheet.&#10;ReadXLS class developed to read data from excel sheets and HashTable used for better convince while handling multiple col data.">
-      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 22-12-24 19:26:52/2.Response.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 22-12-24 21:39:04/2.Response.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageObjects/DashboardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageObjects/MyInfoPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestCases/T_MyInfoPDUITest.java" afterDir="false" />
+    <list default="true" id="063a77a8-5e72-4444-a077-d3015cc6d7e3" name="Changes" comment="UI Testing : Personal Detail's Page UI Check Test.">
+      <change afterPath="$PROJECT_DIR$/null/1.Login Credentials.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null/2.Response.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 20-12-24 15:10:42/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 20-12-24 15:10:42/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 21-12-24 16:51:33/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 21-12-24 16:51:33/2.Response.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 22-12-24 19:26:45/2.Response.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 21-12-24 16:53:29/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 21-12-24 16:53:29/2.Response.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 22-12-24 21:38:57/2.Response.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 21-12-24 18:22:35/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 21-12-24 18:22:35/2.Response.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 22-12-24 19:26:47/2.Response.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 21-12-24 18:31:20/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 21-12-24 18:31:20/2.Response.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 22-12-24 21:38:59/2.Response.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 21-12-24 18:33:57/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 21-12-24 18:33:57/2.Response.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 22-12-24 19:26:50/2.Response.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 20-12-24 15:10:44/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 20-12-24 15:10:44/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 21-12-24 16:51:35/1.Login Credentials.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 22-12-24 19:26:47/1.Login Credentials.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 21-12-24 16:51:35/2.Response.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 22-12-24 21:39:01/2.Response.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 21-12-24 16:53:31/1.Login Credentials.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 22-12-24 19:26:52/1.Login Credentials.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 21-12-24 16:53:31/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 21-12-24 18:22:38/1.Login Credentials.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 22-12-24 21:38:59/1.Login Credentials.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 21-12-24 18:22:38/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 21-12-24 18:31:23/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 21-12-24 18:31:23/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 21-12-24 18:34:00/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 21-12-24 18:34:00/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 20-12-24 15:10:46/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 20-12-24 15:10:46/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 21-12-24 16:51:38/1.Login Credentials.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 22-12-24 21:38:57/1.Login Credentials.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 21-12-24 16:51:38/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 21-12-24 16:53:34/1.Login Credentials.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 22-12-24 21:39:01/1.Login Credentials.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 21-12-24 16:53:34/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 21-12-24 18:22:40/1.Login Credentials.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 22-12-24 19:26:45/1.Login Credentials.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 21-12-24 18:22:40/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 21-12-24 18:31:25/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 21-12-24 18:31:25/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 21-12-24 18:34:02/1.Login Credentials.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 22-12-24 19:26:50/1.Login Credentials.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 21-12-24 18:34:02/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 20-12-24 15:10:48/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 20-12-24 15:10:48/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 21-12-24 16:51:40/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 21-12-24 16:51:40/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 21-12-24 16:53:36/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 21-12-24 16:53:36/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 21-12-24 18:22:42/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 21-12-24 18:22:42/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 21-12-24 18:31:27/1.Login Credentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 21-12-24 18:31:27/2.Response.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 21-12-24 18:34:05/1.Login Credentials.png" beforeDir="false" afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 22-12-24 21:39:04/1.Login Credentials.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 21-12-24 18:34:05/2.Response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 22-12-24 19:26:45/1.Login Credentials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 22-12-24 19:26:45/2.Response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 22-12-24 21:38:57/1.Login Credentials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001 22-12-24 21:38:57/2.Response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 22-12-24 19:26:47/1.Login Credentials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 22-12-24 19:26:47/2.Response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 22-12-24 21:38:59/1.Login Credentials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002 22-12-24 21:38:59/2.Response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 22-12-24 19:26:50/1.Login Credentials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 22-12-24 19:26:50/2.Response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 22-12-24 21:39:01/1.Login Credentials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003 22-12-24 21:39:01/2.Response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 22-12-24 19:26:52/1.Login Credentials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 22-12-24 19:26:52/2.Response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 22-12-24 21:39:04/1.Login Credentials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004 22-12-24 21:39:04/2.Response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestData/TestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/TestData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateLoginCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateLoginCredentials.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/MyInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/MyInfoPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/T_LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/T_LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UtilityObjects/SuiteBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UtilityObjects/SuiteBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/T_MyInfoPDUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/T_MyInfoPDUITest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +70,7 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.T_MyInfoPDUITest (1)">
+  <component name="RunManager" selected="TestNG.T_MyInfoPDUITest (3)">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,18 +78,6 @@
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateLoginCredentials.getCredentials (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OrangeHRMFW" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateLoginCredentials" />
-      <option name="METHOD_NAME" value="getCredentials" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,7 +94,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T_MyInfoPDUITest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T_LoginTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OrangeHRMFW" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestCases" />
+      <option name="MAIN_CLASS_NAME" value="TestCases.T_LoginTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T_MyInfoPDUITest (3)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRMFW" />
       <extension name="coverage">
         <pattern>
@@ -155,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T_MyInfoPDUITest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T_MyInfoPDUITest (4)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRMFW" />
       <extension name="coverage">
         <pattern>
@@ -192,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.T_MyInfoPDUITest (1)" />
-        <item itemvalue="TestNG.T_MyInfoPDUITest" />
-        <item itemvalue="TestNG.CreateLoginCredentials.getCredentials" />
+        <item itemvalue="TestNG.T_MyInfoPDUITest (3)" />
         <item itemvalue="TestNG.T_MyInfoPDUITest.myInfoPDUITest" />
-        <item itemvalue="TestNG.CreateLoginCredentials.getCredentials (1)" />
+        <item itemvalue="TestNG.T_LoginTest.loginTest" />
+        <item itemvalue="TestNG.T_MyInfoPDUITest (4)" />
+        <item itemvalue="TestNG.CreateLoginCredentials.getCredentials" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734789623296</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="UI Testing : Personal Detail's Page UI Check Test.">
+      <option name="closed" value="true" />
+      <created>1735048204528</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735048204528</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,6 +280,7 @@
     <MESSAGE value="Login page test successful." />
     <MESSAGE value="Login Test Evidence facility provided.&#10;Working fine." />
     <MESSAGE value="Data-driven testing using external excel sheet.&#10;ReadXLS class developed to read data from excel sheets and HashTable used for better convince while handling multiple col data." />
-    <option name="LAST_COMMIT_MESSAGE" value="Data-driven testing using external excel sheet.&#10;ReadXLS class developed to read data from excel sheets and HashTable used for better convince while handling multiple col data." />
+    <MESSAGE value="UI Testing : Personal Detail's Page UI Check Test." />
+    <option name="LAST_COMMIT_MESSAGE" value="UI Testing : Personal Detail's Page UI Check Test." />
   </component>
 </project>

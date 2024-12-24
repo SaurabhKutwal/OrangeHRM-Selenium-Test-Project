@@ -31,7 +31,7 @@ public class T_LoginTest extends SuiteBase {
         String evidencePath = getEvidencePath(this.getClass().getSimpleName(),data.get("Case_ID"));
         loginPage.setEvidencePath(evidencePath);
 
-        String msg = loginPage.login(data.get("Case_ID"),data.get("Username"),data.get("Password"));
+        String msg = loginPage.login(data.get("Username"),data.get("Password"));
         Assert.assertEquals(msg,data.get("Expected"));
     }
 

@@ -18,7 +18,7 @@ public class LoginPage extends SuiteBase {
     WebDriver driver;
     WebDriverWait wait;
 
-    String evidencePath;
+    String evidencePath = null;
 
     public LoginPage(WebDriver driver){
         this.driver = driver;
@@ -39,22 +39,26 @@ public class LoginPage extends SuiteBase {
     @FindBy(xpath = "//p[text() = 'Invalid credentials']")
     WebElement errorMsg;
 
-    public String login(String caseId,String user, String pass) throws IOException {
+    public String login(String user, String pass) throws IOException {
         userName.sendKeys(user);
         password.sendKeys(pass);
-        takeScreenshot(driver,evidencePath,"1.Login Credentials");
+        if (evidencePath != null){
+            takeScreenshot(driver,evidencePath,"1.Login Credentials");
+        }
         loginBtn.click();
         String msg = getErrorMsg();
-        takeScreenshot(driver,evidencePath,"2.Response");
+        if (evidencePath != null){
+            takeScreenshot(driver,evidencePath,"2.Response");
+        }
         return msg;
     }
 
-    public void tempLogin(String user, String pass){
-        userName.sendKeys(user);
-        password.sendKeys(pass);
-        loginBtn.click();
-        String msg = getErrorMsg();
-    }
+//    public void tempLogin(String user, String pass){
+//        userName.sendKeys(user);
+//        password.sendKeys(pass);
+//        loginBtn.click();
+//        String msg = getErrorMsg();
+//    }
 
     String getErrorMsg(){
         try{

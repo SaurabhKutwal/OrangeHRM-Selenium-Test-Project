@@ -6,14 +6,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
 import java.time.Duration;
 
+import static UtilityObjects.PageUtility.takeScreenshot;
 import static org.openqa.selenium.support.PageFactory.initElements;
 
 public class MyInfoPage extends SuiteBase {
 
     WebDriver driver;
     WebDriverWait wait;
+
+    String evidencePath;
 
     public MyInfoPage(WebDriver driver){
         this.driver = driver;
@@ -58,58 +62,54 @@ public class MyInfoPage extends SuiteBase {
     @FindBy(xpath = "//label[text() = 'Female']/input")
     WebElement femaleChkBox;
 
-    public String checkField(String field){
-        if (field.equals("FirstName")) {
-            if(firstName.isEnabled()) return "Enable";
-            else return "Disable";
+    public String checkField(String field) throws IOException {
+
+        takeScreenshot(driver,evidencePath,field);
+
+        switch (field) {
+            case "FirstName":
+                if (firstName.isEnabled()) return "Enable";
+                else return "Disable";
+            case "MiddleName":
+                if (middleName.isEnabled()) return "Enable";
+                else return "Disable";
+            case "LastName":
+                if (lastName.isEnabled()) return "Enable";
+                else return "Disable";
+            case "EmployeeId":
+                if (empId.isEnabled()) return "Enable";
+                else return "Disable";
+            case "OtherId":
+                if (otherId.isEnabled()) return "Enable";
+                else return "Disable";
+            case "Driver License Number":
+                if (driverLicenseNum.isEnabled()) return "Enable";
+                else return "Disable";
+            case "License Expiry Date":
+                if (licenseExpDate.isEnabled()) return "Enable";
+                else return "Disable";
+            case "Nationality":
+                if (nationality.isEnabled()) return "Enable";
+                else return "Disable";
+            case "Marital Status":
+                if (maritalStatus.isEnabled()) return "Enable";
+                else return "Disable";
+            case "Date Of Birth":
+                if (dob.isEnabled()) return "Enable";
+                else return "Disable";
+            case "Male Checkbox":
+                if (maleChkBox.isEnabled()) return "Enable";
+                else return "Disable";
+            case "Female Checkbox":
+                if (femaleChkBox.isEnabled()) return "Enable";
+                else return "Disable";
+            default:
+                return "No Such Field";
         }
-        else if (field.equals("MiddleName")) {
-            if(middleName.isEnabled()) return "Enable";
-            else return "Disable";
-        }
-        else if (field.equals("LastName")) {
-            if(lastName.isEnabled()) return "Enable";
-            else return "Disable";
-        }
-        else if (field.equals("EmployeeId")) {
-            if(empId.isEnabled()) return "Enable";
-            else return "Disable";
-        }
-        else if (field.equals("OtherId")) {
-            if(otherId.isEnabled()) return "Enable";
-            else return "Disable";
-        }
-        else if (field.equals("Driver License Number")) {
-            if(driverLicenseNum.isEnabled()) return "Enable";
-            else return "Disable";
-        }
-        else if (field.equals("License Expiry Date")) {
-            if(licenseExpDate.isEnabled()) return "Enable";
-            else return "Disable";
-        }
-        else if (field.equals("Nationality")) {
-            if(nationality.isEnabled()) return "Enable";
-            else return "Disable";
-        }
-        else if (field.equals("Marital Status")) {
-            if(maritalStatus.isEnabled()) return "Enable";
-            else return "Disable";
-        }
-        else if (field.equals("Date Of Birth")) {
-            if(dob.isEnabled()) return "Enable";
-            else return "Disable";
-        }
-        else if (field.equals("Male Checkbox")) {
-            if(maleChkBox.isEnabled()) return "Enable";
-            else return "Disable";
-        }
-        else if (field.equals("Female Checkbox")) {
-            if(femaleChkBox.isEnabled()) return "Enable";
-            else return "Disable";
-        }
-        else{
-            return "No Such Field";
-        }
+    }
+
+    public void setEvidencePath(String evidencePath){
+        this.evidencePath = evidencePath;
     }
 
 
