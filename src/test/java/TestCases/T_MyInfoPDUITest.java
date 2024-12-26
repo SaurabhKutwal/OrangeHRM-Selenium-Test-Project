@@ -40,10 +40,10 @@ public class T_MyInfoPDUITest extends SuiteBase {
         Assert.assertEquals(myInfoPage.checkField(data.get("Field")),data.get("Status Expected"),"failed");
     }
 
-//    @AfterClass
-//    public void end(){
-//        tearDown();
-//    }
+    @AfterClass
+    public void end(){
+        tearDown();
+    }
 
     @DataProvider
     public Object[][] testData() throws IOException {

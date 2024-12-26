@@ -43,8 +43,15 @@ public class TestListeners extends SuiteBase implements ITestListener{
 
     @Override
     public void onTestStart(ITestResult result) {
-        data = (Hashtable<String, String>) result.getParameters()[1];
-        test = extentReport.createTest("Test Case : " + data.get("Case_ID") + " : " + result.getName());
+        try{
+            data = (Hashtable<String, String>) result.getParameters()[1];
+            test = extentReport.createTest("Test Case : " + data.get("Case_ID") + " : " + result.getName());
+        }
+        catch (Exception e){
+            test = extentReport.createTest("Test Case : " + result.getName());
+        }
+
+
     }
 
     @Override

@@ -19,7 +19,7 @@ public class ReadXLS {
 
         int row = sheet.getLastRowNum();
 
-        Object[][] data = new Object[row][2];
+        Object[][] data = new  Object[row][2];
 
         String caseID = "";
 

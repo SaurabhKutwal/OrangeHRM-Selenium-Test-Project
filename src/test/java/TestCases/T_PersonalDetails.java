@@ -43,6 +43,7 @@ public class T_PersonalDetails extends SuiteBase {
         String status = myInfoPage.saveForm();
         System.out.println(status);
         Assert.assertEquals(status,"Successfully Updated","Failed to Save");
+        tearDown();
     }
     @DataProvider
     public Object[][] testData() throws IOException {

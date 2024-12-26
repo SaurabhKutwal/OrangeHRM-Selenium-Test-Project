@@ -20,9 +20,7 @@ import java.util.Properties;
 public class SuiteBase {
 
     public WebDriver driver;
-    public WebDriverWait wait;
     public Properties param;
-    public ExtentReports extentReport;
 
     public void startUp() throws IOException {
         initDriver();
@@ -41,18 +39,6 @@ public class SuiteBase {
         System.out.println("Properties file loaded");
     }
 
-//    public void initExtentReport(){
-//        String time = new SimpleDateFormat("dd-MMM-yyyy hh:mm:ss").format(new Date());
-//        String path = System.getProperty("user.dir") + "//Outputs//Reports//extentReport" + time + ".html";
-//
-//        ExtentSparkReporter reporter = new ExtentSparkReporter(path);
-//        reporter.config().setReportName("ORHRM Web Testing");
-//        reporter.config().setDocumentTitle("Test Report (Orange HRM Testing)");
-//        extentReport = new ExtentReports();
-//        extentReport.attachReporter(reporter);
-//
-//        System.out.println("Report Initialization Successfully");
-//    }
 
     public String getEvidencePath(String testClass,String caseId){
         new File(System.getProperty("user.dir") + "//Outputs//Evidences//" + testClass).mkdir();

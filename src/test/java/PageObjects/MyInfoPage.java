@@ -251,6 +251,9 @@ public class MyInfoPage extends SuiteBase {
             }
         });
 
+        //Lambda expression
+        //wait.until((ExpectedCondition<Boolean>) driver -> saveBtn.getLocation().x == 1496 && saveBtn.getLocation().y == 693);
+
         saveBtn.click();
         wait.until(ExpectedConditions.visibilityOf(toasterMsg));
         return toasterMsg.getText();

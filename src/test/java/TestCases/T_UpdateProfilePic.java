@@ -5,6 +5,7 @@ import PageObjects.LoginPage;
 import PageObjects.MyInfoPage;
 import UtilityObjects.SuiteBase;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -35,5 +36,10 @@ public class T_UpdateProfilePic extends SuiteBase {
         String evidencePath = getEvidencePath(this.getClass().getSimpleName(),"Case_018");
         myInfoPage.setEvidencePath(evidencePath);
         Assert.assertEquals(myInfoPage.uploadPic(),"Successfully Updated","Failed to Save");
+    }
+
+    @AfterClass
+    public void end(){
+        tearDown();
     }
 }
