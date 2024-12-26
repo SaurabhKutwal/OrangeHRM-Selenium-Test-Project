@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Listener.TestListeners"/>
+    </listeners>
     <test verbose="2" preserve-order="true" name="/Users/saurabh/Desktop/JavaSelenium/OrangeHRM-Selenium-Test-Project">
         <classes>
             <class name="TestCases.T_LoginTest">
@@ -13,9 +16,11 @@
                     <include name="T_myInfoPDUITest"/>
                 </methods>
             </class>
+            <class name="TestCases.T_PersonalDetails">
+                <methods>
+                    <include name="t_UpdatePersonalDetails"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
-
-
-

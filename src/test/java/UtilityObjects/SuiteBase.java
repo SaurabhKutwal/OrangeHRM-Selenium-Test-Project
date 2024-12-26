@@ -1,5 +1,7 @@
 package UtilityObjects;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,6 +22,7 @@ public class SuiteBase {
     public WebDriver driver;
     public WebDriverWait wait;
     public Properties param;
+    public ExtentReports extentReport;
 
     public void startUp() throws IOException {
         initDriver();
@@ -38,6 +41,19 @@ public class SuiteBase {
         System.out.println("Properties file loaded");
     }
 
+//    public void initExtentReport(){
+//        String time = new SimpleDateFormat("dd-MMM-yyyy hh:mm:ss").format(new Date());
+//        String path = System.getProperty("user.dir") + "//Outputs//Reports//extentReport" + time + ".html";
+//
+//        ExtentSparkReporter reporter = new ExtentSparkReporter(path);
+//        reporter.config().setReportName("ORHRM Web Testing");
+//        reporter.config().setDocumentTitle("Test Report (Orange HRM Testing)");
+//        extentReport = new ExtentReports();
+//        extentReport.attachReporter(reporter);
+//
+//        System.out.println("Report Initialization Successfully");
+//    }
+
     public String getEvidencePath(String testClass,String caseId){
         new File(System.getProperty("user.dir") + "//Outputs//Evidences//" + testClass).mkdir();
         String time = new SimpleDateFormat("dd-MM-yy HH:mm:ss").format(new Date());
@@ -45,7 +61,7 @@ public class SuiteBase {
         new File(path).mkdir();
         return path;
     }
-    public void lauchBrowser(){
+    public void launchBrowser(){
         driver.get(param.getProperty("siteURL"));
         System.out.println("Browser Launched");
     }

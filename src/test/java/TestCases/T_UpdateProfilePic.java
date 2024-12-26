@@ -5,14 +5,12 @@ import PageObjects.LoginPage;
 import PageObjects.MyInfoPage;
 import UtilityObjects.SuiteBase;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.util.Hashtable;
 
-import static UtilityObjects.ReadXLS.getData;
-
-public class T_MyInfoPDUITest extends SuiteBase {
+public class T_UpdateProfilePic extends SuiteBase {
 
     MyInfoPage myInfoPage;
     LoginPage loginPage;
@@ -30,23 +28,12 @@ public class T_MyInfoPDUITest extends SuiteBase {
         dashboardPage = new DashboardPage(driver);
         dashboardPage.goTo("My Info");
         myInfoPage = new MyInfoPage(driver);
-
     }
 
-    @Test(dataProvider = "testData")
-    void T_myInfoPDUITest(int row, Hashtable<String,String> data) throws IOException {
-        String evidencePath = getEvidencePath(this.getClass().getSimpleName(),data.get("Case_ID"));
+    @Test
+    public void t_UpdateProfilePic() throws InterruptedException, IOException {
+        String evidencePath = getEvidencePath(this.getClass().getSimpleName(),"Case_018");
         myInfoPage.setEvidencePath(evidencePath);
-        Assert.assertEquals(myInfoPage.checkField(data.get("Field")),data.get("Status Expected"),"failed");
-    }
-
-//    @AfterClass
-//    public void end(){
-//        tearDown();
-//    }
-
-    @DataProvider
-    public Object[][] testData() throws IOException {
-        return getData(this);
+        Assert.assertEquals(myInfoPage.uploadPic(),"Successfully Updated","Failed to Save");
     }
 }

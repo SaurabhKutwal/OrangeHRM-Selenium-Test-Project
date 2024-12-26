@@ -4,13 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063a77a8-5e72-4444-a077-d3015cc6d7e3" name="Changes" comment="Functionality : Update of Personal Details.&#10;&#10;Learn : Custom wait Excepted condition. Override apply method.">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/ProfilePic.png" afterDir="false" />
+    <list default="true" id="063a77a8-5e72-4444-a077-d3015cc6d7e3" name="Changes" comment="Functionality : Update of Personal Details.&#10;&#10;Evidences provided.">
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001/1.Login Credentials.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_001/2.Response.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002/1.Login Credentials.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_002/2.Response.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003/1.Login Credentials.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_003/2.Response.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004/1.Login Credentials.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Evidences/T_LoginTest/Case_004/2.Response.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Outputs/Reports/extentReport26-Dec-2024 05:44:35.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Listener/TestListeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestCases/T_UpdateProfilePic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/null/1.Login Credentials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/null/2.Response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateLoginCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateLoginCredentials.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/MyInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/MyInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/T_LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/T_LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/T_MyInfoPDUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/T_MyInfoPDUITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/T_PersonalDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/T_PersonalDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UtilityObjects/PageUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UtilityObjects/PageUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UtilityObjects/SuiteBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UtilityObjects/SuiteBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +67,7 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.T_PersonalDetails (1)">
+  <component name="RunManager" selected="TestNG./Users/saurabh/Desktop/JavaSelenium/OrangeHRM-Selenium-Test-Project/testng.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -75,7 +91,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T_PersonalDetails (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T_LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRMFW" />
       <extension name="coverage">
         <pattern>
@@ -84,7 +100,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestCases" />
-      <option name="MAIN_CLASS_NAME" value="TestCases.T_PersonalDetails" />
+      <option name="MAIN_CLASS_NAME" value="TestCases.T_LoginTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -92,7 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T_PersonalDetails (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T_MyInfoPDUITest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRMFW" />
       <extension name="coverage">
         <pattern>
@@ -101,7 +117,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestCases" />
-      <option name="MAIN_CLASS_NAME" value="TestCases.T_PersonalDetails" />
+      <option name="MAIN_CLASS_NAME" value="TestCases.T_MyInfoPDUITest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -109,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T_PersonalDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T_UpdateProfilePic (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRMFW" />
       <extension name="coverage">
         <pattern>
@@ -118,7 +134,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestCases" />
-      <option name="MAIN_CLASS_NAME" value="TestCases.T_PersonalDetails" />
+      <option name="MAIN_CLASS_NAME" value="TestCases.T_UpdateProfilePic" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -126,18 +142,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T_PersonalDetails.t_UpdatePersonalDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/saurabh/Desktop/JavaSelenium/OrangeHRM-Selenium-Test-Project/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRMFW" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TestCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TestCases" />
-      <option name="MAIN_CLASS_NAME" value="TestCases.T_PersonalDetails" />
-      <option name="METHOD_NAME" value="t_UpdatePersonalDetails" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -146,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.T_PersonalDetails (1)" />
+        <item itemvalue="TestNG./Users/saurabh/Desktop/JavaSelenium/OrangeHRM-Selenium-Test-Project/testng.xml" />
         <item itemvalue="TestNG.CreateLoginCredentials.getCredentials" />
-        <item itemvalue="TestNG.T_PersonalDetails" />
-        <item itemvalue="TestNG.T_PersonalDetails.t_UpdatePersonalDetails" />
-        <item itemvalue="TestNG.T_PersonalDetails (2)" />
+        <item itemvalue="TestNG.T_LoginTest" />
+        <item itemvalue="TestNG.T_MyInfoPDUITest" />
+        <item itemvalue="TestNG.T_UpdateProfilePic (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735198821261</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Functionality : Update of Personal Details.&#10;&#10;Evidences provided.">
+      <option name="closed" value="true" />
+      <created>1735199853331</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1735199853332</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,6 +313,7 @@
     <MESSAGE value="parallel testing achieved." />
     <MESSAGE value="EOD." />
     <MESSAGE value="Functionality : Update of Personal Details.&#10;&#10;Learn : Custom wait Excepted condition. Override apply method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Functionality : Update of Personal Details.&#10;&#10;Learn : Custom wait Excepted condition. Override apply method." />
+    <MESSAGE value="Functionality : Update of Personal Details.&#10;&#10;Evidences provided." />
+    <option name="LAST_COMMIT_MESSAGE" value="Functionality : Update of Personal Details.&#10;&#10;Evidences provided." />
   </component>
 </project>

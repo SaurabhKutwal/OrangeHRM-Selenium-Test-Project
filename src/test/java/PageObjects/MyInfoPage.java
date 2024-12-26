@@ -88,6 +88,9 @@ public class MyInfoPage extends SuiteBase {
     @FindBy(xpath = "//p[@class = 'oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']")
     WebElement toasterMsg;
 
+    @FindBy(xpath = "//div[@class = 'orangehrm-edit-employee']//img[@alt = 'profile picture']")
+    WebElement profileIcon;
+
     public String checkField(String field) throws IOException {
 
         wait.until(ExpectedConditions.visibilityOf(form));
@@ -251,6 +254,25 @@ public class MyInfoPage extends SuiteBase {
         saveBtn.click();
         wait.until(ExpectedConditions.visibilityOf(toasterMsg));
         return toasterMsg.getText();
+    }
+
+    public String uploadPic() throws InterruptedException, IOException {
+        profileIcon.click();
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class = 'employee-image-wrapper']"))));
+        Thread.sleep(5000);
+        takeScreenshot(driver,evidencePath,"BeforeUpdate");
+        driver.findElement(By.xpath("//input[@type = 'file']")).sendKeys(System.getProperty("user.dir") +
+                "//src//test//resources//ProfilePic.png");
+        driver.findElement(By.xpath("//button[@type = 'submit']")).click();
+        wait.until(ExpectedConditions.visibilityOf(toasterMsg));
+        String msg = toasterMsg.getText();
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class = 'employee-image-wrapper']"))));
+        Thread.sleep(5000);
+        takeScreenshot(driver,evidencePath,"AfterUpdate");
+        wait.until(ExpectedConditions.visibilityOf(toasterMsg));
+        Thread.sleep(2000);
+
+        return msg;
     }
 }
 

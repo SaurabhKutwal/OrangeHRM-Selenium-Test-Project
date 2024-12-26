@@ -21,7 +21,7 @@ public class T_PersonalDetails extends SuiteBase {
     @BeforeClass
     void lunch() throws IOException {
         startUp();
-        lauchBrowser();
+        launchBrowser();
         loginPage = new LoginPage(driver);
 
         String msg = loginPage.login(param.getProperty("userName"),param.getProperty("password"));
@@ -48,5 +48,4 @@ public class T_PersonalDetails extends SuiteBase {
     public Object[][] testData() throws IOException {
         return getData(this);
     }
-
 }

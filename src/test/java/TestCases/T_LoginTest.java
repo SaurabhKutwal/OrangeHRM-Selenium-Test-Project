@@ -17,7 +17,7 @@ public class T_LoginTest extends SuiteBase {
     @BeforeClass
     public void launch() throws IOException {
         startUp();
-        lauchBrowser();
+        launchBrowser();
         loginPage = new LoginPage(driver);
     }
 
