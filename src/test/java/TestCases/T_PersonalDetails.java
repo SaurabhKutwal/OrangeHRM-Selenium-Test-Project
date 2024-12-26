@@ -33,7 +33,7 @@ public class T_PersonalDetails extends SuiteBase {
     }
     
     @Test(dataProvider = "testData")
-    public void t_UpdatePersonalDetails(int row, Hashtable<String,String> data){
+    public void t_UpdatePersonalDetails(int row, Hashtable<String,String> data) throws IOException {
         String evidencePath = getEvidencePath(this.getClass().getSimpleName(),data.get("Case_ID"));
         myInfoPage.setEvidencePath(evidencePath);
         myInfoPage.updateField(data.get("Update Field"),data.get("Value"));

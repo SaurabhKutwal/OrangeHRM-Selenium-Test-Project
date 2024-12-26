@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static UtilityObjects.PageUtility.takeScreenshot;
+import static UtilityObjects.PageUtility.takeScreenshotOfWebEle;
 import static org.openqa.selenium.support.PageFactory.initElements;
 
 public class MyInfoPage extends SuiteBase {
@@ -144,8 +145,7 @@ public class MyInfoPage extends SuiteBase {
         wait.until(ExpectedConditions.attributeContains(By.xpath(tabList+"//a[text() = '"+section+"']"),"class","orangehrm-tabs-item --active"));
     }
 
-    public void updateField(String field, String value){
-
+    public void updateField(String field, String value) throws IOException {
         switch (field) {
             case "FirstName":
                 if (firstName.isEnabled()){
@@ -238,6 +238,7 @@ public class MyInfoPage extends SuiteBase {
                 }
                 break;
         }
+        takeScreenshot(driver,evidencePath,field);
     }
 
     public String saveForm() throws InterruptedException {

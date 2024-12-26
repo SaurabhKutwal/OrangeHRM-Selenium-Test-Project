@@ -41,7 +41,7 @@ public class SuiteBase {
     public String getEvidencePath(String testClass,String caseId){
         new File(System.getProperty("user.dir") + "//Outputs//Evidences//" + testClass).mkdir();
         String time = new SimpleDateFormat("dd-MM-yy HH:mm:ss").format(new Date());
-        String path = System.getProperty("user.dir") + "//Outputs//Evidences//" + testClass + "//" + caseId + " " + time;
+        String path = System.getProperty("user.dir") + "//Outputs//Evidences//" + testClass + "//" + caseId;// + " " + time;
         new File(path).mkdir();
         return path;
     }

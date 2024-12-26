@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063a77a8-5e72-4444-a077-d3015cc6d7e3" name="Changes" comment="EOD.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestCases/T_PersonalDetails.java" afterDir="false" />
+    <list default="true" id="063a77a8-5e72-4444-a077-d3015cc6d7e3" name="Changes" comment="Functionality : Update of Personal Details.&#10;&#10;Learn : Custom wait Excepted condition. Override apply method.">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/ProfilePic.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestData/TestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/TestData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CreateLoginCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateLoginCredentials.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/MyInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/MyInfoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/T_MyInfoPDUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/T_MyInfoPDUITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UtilityObjects/ReadXLS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UtilityObjects/ReadXLS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/T_PersonalDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/T_PersonalDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UtilityObjects/PageUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UtilityObjects/PageUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UtilityObjects/SuiteBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UtilityObjects/SuiteBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735057155322</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Functionality : Update of Personal Details.&#10;&#10;Learn : Custom wait Excepted condition. Override apply method.">
+      <option name="closed" value="true" />
+      <created>1735198821261</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735198821261</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -291,6 +296,7 @@
     <MESSAGE value="UI Testing : Personal Detail's Page UI Check Test.&#10;&#10;Evidence attached, data provider installed." />
     <MESSAGE value="parallel testing achieved." />
     <MESSAGE value="EOD." />
-    <option name="LAST_COMMIT_MESSAGE" value="EOD." />
+    <MESSAGE value="Functionality : Update of Personal Details.&#10;&#10;Learn : Custom wait Excepted condition. Override apply method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Functionality : Update of Personal Details.&#10;&#10;Learn : Custom wait Excepted condition. Override apply method." />
   </component>
 </project>
