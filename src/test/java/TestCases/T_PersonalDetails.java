@@ -11,9 +11,9 @@ import java.io.IOException;
 import java.util.Hashtable;
 
 import static UtilityObjects.ReadXLS.getData;
+import static org.testng.TestRunner.PriorityWeight.priority;
 
-public class T_MyInfoPDUITest extends SuiteBase {
-
+public class T_PersonalDetails extends SuiteBase {
     MyInfoPage myInfoPage;
     LoginPage loginPage;
     DashboardPage dashboardPage;
@@ -30,23 +30,23 @@ public class T_MyInfoPDUITest extends SuiteBase {
         dashboardPage = new DashboardPage(driver);
         dashboardPage.goTo("My Info");
         myInfoPage = new MyInfoPage(driver);
-
     }
-
+    
     @Test(dataProvider = "testData")
-    void T_myInfoPDUITest(int row, Hashtable<String,String> data) throws IOException {
+    public void t_UpdatePersonalDetails(int row, Hashtable<String,String> data){
         String evidencePath = getEvidencePath(this.getClass().getSimpleName(),data.get("Case_ID"));
         myInfoPage.setEvidencePath(evidencePath);
-        Assert.assertEquals(myInfoPage.checkField(data.get("Field")),data.get("Status Expected"),"failed");
+        myInfoPage.updateField(data.get("Update Field"),data.get("Value"));
     }
-
-//    @AfterClass
-//    public void end(){
-//        tearDown();
-//    }
-
+    @AfterClass
+    public void saveFunc() throws InterruptedException {
+        String status = myInfoPage.saveForm();
+        System.out.println(status);
+        Assert.assertEquals(status,"Successfully Updated","Failed to Save");
+    }
     @DataProvider
     public Object[][] testData() throws IOException {
         return getData(this);
     }
+
 }

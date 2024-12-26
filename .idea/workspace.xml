@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063a77a8-5e72-4444-a077-d3015cc6d7e3" name="Changes" comment="parallel testing achieved.">
+    <list default="true" id="063a77a8-5e72-4444-a077-d3015cc6d7e3" name="Changes" comment="EOD.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestCases/T_PersonalDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UtilityObjects/SuiteBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UtilityObjects/SuiteBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestData/TestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/TestData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateLoginCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateLoginCredentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/MyInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/MyInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/T_MyInfoPDUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/T_MyInfoPDUITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UtilityObjects/ReadXLS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UtilityObjects/ReadXLS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +54,7 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG./Users/saurabh/Desktop/JavaSelenium/OrangeHRM-Selenium-Test-Project/testng.xml">
+  <component name="RunManager" selected="TestNG.T_PersonalDetails (1)">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T_LoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T_PersonalDetails (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRMFW" />
       <extension name="coverage">
         <pattern>
@@ -81,7 +87,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestCases" />
-      <option name="MAIN_CLASS_NAME" value="TestCases.T_LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="TestCases.T_PersonalDetails" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -89,7 +95,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T_LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T_PersonalDetails (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRMFW" />
       <extension name="coverage">
         <pattern>
@@ -98,7 +104,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestCases" />
-      <option name="MAIN_CLASS_NAME" value="TestCases.T_LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="TestCases.T_PersonalDetails" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -106,7 +112,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T_MyInfoPDUITest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T_PersonalDetails" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRMFW" />
       <extension name="coverage">
         <pattern>
@@ -115,7 +121,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestCases" />
-      <option name="MAIN_CLASS_NAME" value="TestCases.T_MyInfoPDUITest" />
+      <option name="MAIN_CLASS_NAME" value="TestCases.T_PersonalDetails" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -123,10 +129,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/saurabh/Desktop/JavaSelenium/OrangeHRM-Selenium-Test-Project/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T_PersonalDetails.t_UpdatePersonalDetails" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRMFW" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestCases" />
+      <option name="MAIN_CLASS_NAME" value="TestCases.T_PersonalDetails" />
+      <option name="METHOD_NAME" value="t_UpdatePersonalDetails" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -135,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/saurabh/Desktop/JavaSelenium/OrangeHRM-Selenium-Test-Project/testng.xml" />
+        <item itemvalue="TestNG.T_PersonalDetails (1)" />
         <item itemvalue="TestNG.CreateLoginCredentials.getCredentials" />
-        <item itemvalue="TestNG.T_LoginTest (1)" />
-        <item itemvalue="TestNG.T_MyInfoPDUITest" />
-        <item itemvalue="TestNG.T_LoginTest" />
+        <item itemvalue="TestNG.T_PersonalDetails" />
+        <item itemvalue="TestNG.T_PersonalDetails.t_UpdatePersonalDetails" />
+        <item itemvalue="TestNG.T_PersonalDetails (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735056725884</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="EOD.">
+      <option name="closed" value="true" />
+      <created>1735057155322</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735057155322</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,6 +290,7 @@
     <MESSAGE value="UI Testing : Personal Detail's Page UI Check Test." />
     <MESSAGE value="UI Testing : Personal Detail's Page UI Check Test.&#10;&#10;Evidence attached, data provider installed." />
     <MESSAGE value="parallel testing achieved." />
-    <option name="LAST_COMMIT_MESSAGE" value="parallel testing achieved." />
+    <MESSAGE value="EOD." />
+    <option name="LAST_COMMIT_MESSAGE" value="EOD." />
   </component>
 </project>

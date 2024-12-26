@@ -35,7 +35,7 @@ public class CreateLoginCredentials {
         for(int i=0;i<4;i++){
             driver.findElement(By.xpath("//label[text() = 'Employee Id']/parent::div/parent::div//input")).sendKeys(Keys.BACK_SPACE);
         }
-        driver.findElement(By.xpath("//label[text() = 'Employee Id']/parent::div/parent::div//input")).sendKeys("195106111");
+        driver.findElement(By.xpath("//label[text() = 'Employee Id']/parent::div/parent::div//input")).sendKeys("1951061");
         driver.findElement(By.xpath("//input[@type = 'checkbox']/following-sibling::span")).click();
         driver.findElement(By.xpath("//label[text() = 'Username']/parent::div/parent::div//input")).sendKeys("ace19");
         driver.findElement(By.xpath("//label[text() = 'Password']/parent::div/parent::div//input")).sendKeys("BlackP34rl#19");
@@ -45,8 +45,5 @@ public class CreateLoginCredentials {
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(toaster));
         System.out.println("Msg : " + toaster.getText());
-
-
-
     }
 }

@@ -1,15 +1,18 @@
 package PageObjects;
 
 import UtilityObjects.SuiteBase;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 import static UtilityObjects.PageUtility.takeScreenshot;
 import static org.openqa.selenium.support.PageFactory.initElements;
@@ -20,12 +23,14 @@ public class MyInfoPage extends SuiteBase {
     WebDriverWait wait;
 
     String evidencePath;
+    Actions actions;
 
     public MyInfoPage(WebDriver driver){
         this.driver = driver;
         wait = new WebDriverWait(driver,Duration.ofSeconds(5));
         initElements(driver,this);
         this.driver.manage().window().maximize();
+        actions = new Actions(driver);
     }
 
     @FindBy(name = "firstName")
@@ -49,23 +54,38 @@ public class MyInfoPage extends SuiteBase {
     @FindBy(xpath = "//label[text() = 'License Expiry Date']/parent::div/parent::div//child::input")
     WebElement licenseExpDate;
 
-    @FindBy(xpath = "//label[text() = 'Nationality']/parent::div/parent::div//div[text()='-- Select --']")
+    @FindBy(xpath = "//label[text() = 'Nationality']/parent::div/following-sibling::div/div/div/div[1]")
     WebElement nationality;
 
-    @FindBy(xpath = "//label[text() = 'Marital Status']/parent::div/parent::div//div[text()='-- Select --']")
+    @FindBy(xpath = "//label[text() = 'Nationality']/parent::div/parent::div//div[@role = 'listbox']")
+    WebElement nationalityOptions;
+
+    @FindBy(xpath = "//label[text() = 'Marital Status']/parent::div/following-sibling::div/div/div/div[1]")
     WebElement maritalStatus;
+
+    @FindBy(xpath = "//label[text() = 'Marital Status']/parent::div/parent::div//div[@role = 'listbox']")
+    WebElement maritalStatusOptions;
 
     @FindBy(xpath = "//label[text() = 'Date of Birth']/parent::div/parent::div//child::input")
     WebElement dob;
 
-    @FindBy(xpath = "//label[text() = 'Male']/input")
+    @FindBy(xpath = "//input[@type='radio'and @value = '1']/parent::label")
     WebElement maleChkBox;
 
-    @FindBy(xpath = "//label[text() = 'Female']/input")
+    @FindBy(xpath = "//input[@type='radio'and @value = '2']/parent::label")
     WebElement femaleChkBox;
 
     @FindBy(xpath = "//div[@class = 'orangehrm-edit-employee-content']/child::div[1]/form")
     WebElement form;
+
+    @FindBy(xpath = "//div[@role = 'tablist']")
+    WebElement tabList;
+
+    @FindBy(xpath = "//div[@class = 'orangehrm-edit-employee-content']/child::div[1]/form//button")
+    WebElement saveBtn;
+
+    @FindBy(xpath = "//p[@class = 'oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']")
+    WebElement toasterMsg;
 
     public String checkField(String field) throws IOException {
 
@@ -119,10 +139,118 @@ public class MyInfoPage extends SuiteBase {
         this.evidencePath = evidencePath;
     }
 
+    public void goTo(String section){
+        driver.findElement(By.xpath(tabList+"//a[text() = '"+section+"']")).click();
+        wait.until(ExpectedConditions.attributeContains(By.xpath(tabList+"//a[text() = '"+section+"']"),"class","orangehrm-tabs-item --active"));
+    }
 
+    public void updateField(String field, String value){
 
+        switch (field) {
+            case "FirstName":
+                if (firstName.isEnabled()){
+                    firstName.click();
+                    for(int i=1;i<30;i++){
+                        firstName.sendKeys(Keys.BACK_SPACE);
+                    }
+                    firstName.sendKeys(value);
+                }
+                break;
+            case "MiddleName":
+                if (middleName.isEnabled()){
+                    middleName.click();
+                    for(int i=1;i<30;i++){
+                        middleName.sendKeys(Keys.BACK_SPACE);
+                    }
+                    middleName.sendKeys(value);
+                }
+                break;
+            case "LastName":
+                if (lastName.isEnabled()){
+                    lastName.click();
+                    for(int i=1;i<30;i++){
+                        lastName.sendKeys(Keys.BACK_SPACE);
+                    }
+                    lastName.sendKeys(value);
+                }
+                break;
+            case "EmployeeId":
+                if (empId.isEnabled()){
+                    empId.sendKeys(value);
+                }
+                break;
+            case "OtherId":
+                if (otherId.isEnabled()){
+                    otherId.click();
+                    for(int i=1;i<30;i++){
+                        otherId.sendKeys(Keys.BACK_SPACE);
+                    }
+                    otherId.sendKeys(value);
+                }
+                break;
+            case "Driver License Number":
+                if (driverLicenseNum.isEnabled()){
+                    driverLicenseNum.sendKeys(value);
+                }
+                break;
+            case "License Expiry Date":
+                if (licenseExpDate.isEnabled()){
+                    String year = value.substring(0,4);
+                    ArrayList<String> months = new ArrayList<>(List.of("January","February","March","April","May","June","July",
+                            "August","September","October","November","December"));
+                    String month = months.get(Integer.parseInt(value.substring(5,7))-1);
+                    String day = value.substring(8,10);
+                    licenseExpDate.click();
+                    driver.findElement(By.xpath("//div[@class = 'oxd-calendar-selector-month-selected']")).click();
+                    driver.findElement(By.xpath("//li[text() = '"+month+"']")).click();
+                    driver.findElement(By.xpath("//div[@class = 'oxd-calendar-selector-year-selected']")).click();
+                    driver.findElement(By.xpath("//li[text() = '"+year+"']")).click();
+                    driver.findElement(By.xpath("//div[text() = '"+day+"']")).click();
+                }
+                break;
+            case "Nationality":
+                if (nationality.isEnabled()){
+                    nationality.click();
+                    wait.until(ExpectedConditions.visibilityOf(nationalityOptions));
+                    driver.findElement(By.xpath("//span[text() = '"+value+"']")).click();
+                }
+                break;
+            case "Marital Status":
+                if (maritalStatus.isEnabled()){
+                    maritalStatus.click();
+                    wait.until(ExpectedConditions.visibilityOf(maritalStatusOptions));
+                    driver.findElement(By.xpath("//span[text() = '"+value+"']")).click();
+                }
+                break;
+            case "Date Of Birth":
+                if (dob.isEnabled()){
+                    dob.sendKeys(value);
+                }
+                break;
+            case "Male Checkbox":
+                if (maleChkBox.isEnabled()){
+                    maleChkBox.click();
+                }
+                break;
+            case "Female Checkbox":
+                if (femaleChkBox.isEnabled()){
+                    maleChkBox.click();
+                }
+                break;
+        }
+    }
 
+    public String saveForm() throws InterruptedException {
+        wait.until(new ExpectedCondition<Boolean>() {
+            public Boolean apply(WebDriver driver){
+                return saveBtn.getLocation().x == 1496 && saveBtn.getLocation().y == 693;
+            }
+        });
 
-
-
+        saveBtn.click();
+        wait.until(ExpectedConditions.visibilityOf(toasterMsg));
+        return toasterMsg.getText();
+    }
 }
+
+
